@@ -13,7 +13,7 @@
 </head>
 <body>  
 
-    <form action="">
+    <form action="" method="post">
         <div id="odabir_tabele">
             <input type="radio" name="odabir_tabele" id="radio_kategorija" value="kategorija">
             <label for="radio_kategorija">kategorija</label>
