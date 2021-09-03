@@ -1,10 +1,10 @@
 <?php include 'inc/header.php';?>
 <div class="container">
     <div class="jumbotron">
-        <h1>Pronađi nekretninu</h1>
+        <h1>Find a book</h1>
         <form method="GET" action="index.php">
             <select name="category" class="form-control">
-                <option value="0">Izaberi kategoriju</option>
+                <option value="0">Choose a category</option>
                 <?php foreach($categories as $category): ?>
                     <option value="<?php echo $category -> id ?>"><?php echo $category -> name; ?></option>
                 <?php endforeach;?>
@@ -21,7 +21,7 @@
             <p><?php echo $book -> description ?></p>
         </div>
         <div class="col-md-2">
-            <a class="btn btn-secondary" href="book.php?id=<?php echo $book ->id; ?>">Pogledaj</a>
+            <a class="btn btn-secondary" href="book.php?id=<?php echo $book ->id; ?>">Preview</a>
         </div>
     </div>
 

@@ -1,5 +1,5 @@
 <?php include 'inc/header.php';?>
-    <h2 class="page-header">Edituj oglase za nekretnine</h2>
+    <h2 class="page-header">Edit the offer</h2>
     <form method="POST" action="edit.php?id=<?php echo $book -> id; ?>"">
         <div class="form-group">
             <label>Kompanija</label>
@@ -18,19 +18,19 @@
             </select>
         </div>
         <div class="form-group">
-            <label>Naziv nekretnine</label>
+            <label>Book title</label>
             <input type="text" class="form-control" name="book_title" value="<?php echo $book -> book_title; ?>">
         </div>
         <div class="form-group">
-            <label>Opis</label>
+            <label>Description</label>
             <textarea class="form-control" name="description">value="<?php echo $book -> description; ?>"</textarea>
         </div>
         <div class="form-group">
-            <label>Cena</label>
+            <label>Price</label>
             <input type="text" class="form-control" name="price" value="<?php echo $book -> price; ?>">
         </div>
         <div class="form-group">
-            <label>Kontakt Email</label>
+            <label>E-mail</label>
             <input type="text" class="form-control" name="contact_email" value="<?php echo $book -> contact_email; ?>">
         </div>
         <input type="submit" class="btn btn-success" value="Postavi" name="submit">
