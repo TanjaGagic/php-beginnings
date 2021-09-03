@@ -1,5 +1,5 @@
 <?php include 'inc/header.php';?>
-<h2 class="page-header"><?php echo $book -> book_title; ?>(<?php echo $book -> location; ?>)</h2>
+<h2 class="page-header"><?php echo $book -> book_title; ?></h2>
 <small>Objavio <?php echo $book -> contact_agent;?> on <?php echo $book-> post_date;?></small>
 <hr>
 <p class="lead"><?php echo $book -> description; ?></p>
