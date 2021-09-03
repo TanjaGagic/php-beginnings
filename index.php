@@ -3,21 +3,21 @@
 <?php include_once 'config/init.php'; ?>
 
 <?php
-    $realestate = new Realestate;
+    $book = new book;
 
     $template = new Template('./templates/frontpage.php');
 
     $category = isset($_GET['category']) ? $_GET['category'] : null;
 
     if($category) {
-        $template -> realestates = $realestate -> getByCategory($category);
-        $template -> title = 'Nekretnine u kategoriji: '. $realestate -> getCategory($category)->name;
+        $template -> books = $book -> getByCategory($category);
+        $template -> title = 'Nekretnine u kategoriji: '. $book -> getCategory($category)->name;
     } else {
         $template -> title = 'Najnoviji oglasi';
-        $template -> realestates = $realestate -> getAllRealestate();
+        $template -> books = $book -> getAllBook();
     }
  
-    $template -> categories = $realestate -> getCategories();
+    $template -> categories = $book -> getCategories();
     
     echo $template;
 ?>

@@ -3,7 +3,7 @@
     <form method="POST" action="create.php">
         <div class="form-group">
             <label>Kompanija</label>
-            <input type="text" class="form-control" name="company">
+            <input type="text" class="form-control" name="author">
         </div>
         <div class="form-group">
             <label>Kategorija</label>
