@@ -30,7 +30,7 @@
             <label>E-mail</label>
             <input type="text" class="form-control" name="contact_email">
         </div>
-        <input type="submit" class="btn btn-success" value="Postavi" name="submit">
+        <input type="submit" class="btn btn-success" value="Submit" name="submit">
         <br><br>
     </form>
 <?php include 'inc/footer.php';?>

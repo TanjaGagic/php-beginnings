@@ -16,7 +16,7 @@
 
     <form style="display: inline;" method="POST" action="book.php">
         <input type="hidden" name="del_id" value="<?php echo $book -> id; ?>">
-        <input type="submit" class="btn btn-danger" value="Obriši">
+        <input type="submit" class="btn btn-danger" value="Delete">
     </form>
 </div>
 <br>

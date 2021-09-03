@@ -2,11 +2,11 @@
     <h2 class="page-header">Edit the offer</h2>
     <form method="POST" action="edit.php?id=<?php echo $book -> id; ?>"">
         <div class="form-group">
-            <label>Kompanija</label>
+            <label>Author</label>
             <input type="text" class="form-control" name="company" value="<?php echo $book -> author; ?>">
         </div>
         <div class="form-group">
-            <label>Kategorija</label>
+            <label>Category</label>
             <select type="text" class="form-control" name="category">
                 <?php foreach($categories as $category): ?>
                     <?php if($book -> category_id == $category_id) :?>
@@ -33,7 +33,7 @@
             <label>E-mail</label>
             <input type="text" class="form-control" name="contact_email" value="<?php echo $book -> contact_email; ?>">
         </div>
-        <input type="submit" class="btn btn-success" value="Postavi" name="submit">
+        <input type="submit" class="btn btn-success" value="Submit" name="submit">
         <br><br>
     </form>
 <?php include 'inc/footer.php';?>

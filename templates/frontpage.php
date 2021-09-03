@@ -10,7 +10,7 @@
                 <?php endforeach;?>
             </select>
             <br>
-            <input type="submit" class="btn btn-success" value="TRAŽI">
+            <input type="submit" class="btn btn-success" value="SEARCH">
         </form>
     </div>
     <h3><?php echo $title; ?></h3>
