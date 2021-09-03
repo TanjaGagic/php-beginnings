@@ -76,7 +76,7 @@ class Book {
         // Bind data
         $this -> db -> bind(':category_id', $data['category_id']);
         $this -> db -> bind(':book_title', $data['book_title']);
-        $this -> db -> bind(':author', $data['auhtor']);
+        $this -> db -> bind(':author', $data['author']);
         $this -> db -> bind(':description', $data['description']);
         $this -> db -> bind(':price', $data['price']);
         $this -> db -> bind(':contact_email', $data['contact_email']);
