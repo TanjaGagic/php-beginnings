@@ -2,6 +2,6 @@
 define("DB_HOST", "localhost");
 define("DB_USER", "root");
 define("DB_PASS", "");
-define("DB_NAME", "photoverse");
+define("DB_NAME", "bookverse");
  
-define("SITE_TITLE", "Photoverse");
+define("SITE_TITLE", "Bookverse");
