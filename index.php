@@ -11,9 +11,9 @@
 
     if($category) {
         $template -> books = $book -> getByCategory($category);
-        $template -> title = 'Nekretnine u kategoriji: '. $book -> getCategory($category)->name;
+        $template -> title = 'Books in category: '. $book -> getCategory($category)->name;
     } else {
-        $template -> title = 'Najnoviji oglasi';
+        $template -> title = 'Newest offers';
         $template -> books = $book -> getAllBooks();
     }
  
