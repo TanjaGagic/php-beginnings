@@ -2,7 +2,7 @@
     <h2 class="page-header">Create an offer</h2>
     <form method="POST" action="create.php">
         <div class="form-group">
-            <label>Kompanija</label>
+            <label>Author</label>
             <input type="text" class="form-control" name="author">
         </div>
         <div class="form-group">
