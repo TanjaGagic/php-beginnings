@@ -12,7 +12,7 @@
         }
     }
  
-    $template = new Template('./templates/book-single.php');
+    $template = new Template('./templates/book-view.php');
 
     $book_id = isset($_GET['id']) ? $_GET['id'] : null;
 
