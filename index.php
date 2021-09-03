@@ -14,7 +14,7 @@
         $template -> title = 'Nekretnine u kategoriji: '. $book -> getCategory($category)->name;
     } else {
         $template -> title = 'Najnoviji oglasi';
-        $template -> books = $book -> getAllBook();
+        $template -> books = $book -> getAllBooks();
     }
  
     $template -> categories = $book -> getCategories();
