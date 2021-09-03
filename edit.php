@@ -20,7 +20,7 @@
             redirect('index.php', 'Something went wrong', 'error');
         }
     }
-    $template = new Template('./templates/real-edit.php');
+    $template = new Template('./templates/book-edit.php');
 
     $template -> book = $book -> getBook($book_id);
     $template -> categories = $book -> getCategories();

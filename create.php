@@ -18,7 +18,7 @@
             redirect('index.php', 'Something went wrong', 'error');
         }
     }
-    $template = new Template('./templates/real-create.php');
+    $template = new Template('./templates/book-create.php');
 
     $template -> categories = $book -> getCategories();
 
