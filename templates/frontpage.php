@@ -26,13 +26,24 @@
     </div>
 
 
+    <div id="http_zahtev">
+            <input type="radio" name="http_zahtev" id="get" value="get">
+            <label for="get">GET</label>
+            <input type="radio" name="http_zahtev" id="post" value="post">
+            <label for="post">POST</label>
+            <input type="radio" name="http_zahtev" id="put" value="put">
+            <label for="put">PUT</label>
+            <input type="radio" name="http_zahtev" id="delete" value="delete">
+            <label for="delete">DELETE</label>
+        </div>
+
 
     <?php endforeach;?>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 
             <script type="text/javascript">
             
-            $(document).ready(function(){
+          /*  $(document).ready(function(){
                 $('a#button').click(function(){
                     $.ajax({
                         url: this.href,
@@ -43,6 +54,6 @@
                         }
                     });
                 });
-            });
+            }); */
 </script>
 <?php include 'inc/footer.php';?>
