@@ -1,6 +1,6 @@
 <?php include 'inc/header.php';?>
 <h2 class="page-header"><?php echo $book -> book_title; ?></h2>
-<small>Objavio <?php echo $book -> author;?> on <?php echo $book-> post_date;?></small>
+<small>Written by <?php echo $book -> author;?> on <?php echo $book-> post_date;?></small>
 <hr>
 <p class="lead"><?php echo $book -> description; ?></p>
 <ul class="list-group">
@@ -11,6 +11,8 @@
 <br><br>
 <a href="index.php">Go back</a>
 <br><br>
+
+
 <div class="well">
     <a href="edit.php?id=<?php echo $book -> id ?>" class="btn btn-success">Edit</a>
 
