@@ -6,6 +6,7 @@ class Book {
         $this -> db = new Database;
     }
 
+    // SELECT
     public function getAllBooks() {
         $this -> db -> query("SELECT book.*, categories.name AS cname
                             FROM book
@@ -63,6 +64,7 @@ class Book {
         return $row;
     }
 
+    //INSERT
     public function create($data) {
         $this -> db -> query("INSERT INTO book (category_id, book_title, author, description, price, contact_email)
                             VALUES (:category_id, :book_title, :author, :description, :price, :contact_email)");
@@ -81,6 +83,7 @@ class Book {
         }
     }
 
+    //DELETE
     public function delete($id) {
         $this -> db -> query("DELETE FROM book WHERE id = $id");
 
@@ -92,6 +95,7 @@ class Book {
         }
     }
 
+    //UPDATE
     public function update($id, $data) {
         $this -> db -> query("UPDATE book SET category_id = :category_id, book_title = :book_title, author = :author, description = :description, price = :price, contact_email = :contact_email WHERE id = $id");
 
