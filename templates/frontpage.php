@@ -34,7 +34,7 @@
             $(document).ready(function(){
                 $('a#button').click(function(){
                     $.ajax({
-                        url: this.href,
+                        url: "http://localhost:80/php-beginnings/book",
                         type: 'GET',
                         dataType: 'html',
                         success: function (data) {

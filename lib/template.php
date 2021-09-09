@@ -1,11 +1,10 @@
 <?php
 class Template {
-    // Putanja do templejta
+
     protected $template;
-    // prom prosledjene templejtu
     protected $vars = array();
 
-    // Konstruktor
+
     public function __construct($template) {
         $this -> template = $template;
     }

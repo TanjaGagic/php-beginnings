@@ -1,4 +1,5 @@
 <?php include 'inc/header.php';?>
+
     <h2 class="page-header">Create an offer</h2>
     <form method="POST" action="create.php">
         <div class="form-group">
