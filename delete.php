@@ -8,7 +8,7 @@
             echo "Ending Script";
             die();
           }
-          function set_error_handler("customError");
+          function set_error_handler("customError",E_USER_WARNING);
     }else{
         $id =$_GET['id'];
         $sql = "DELETE FROM predstave WHERE id_predstave='".$id."'";
