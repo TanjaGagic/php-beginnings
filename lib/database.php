@@ -1,3 +1,4 @@
+<?php require_once 'lib/config.php';?>
 <?php
 class Database {
     private $host = DB_HOST;

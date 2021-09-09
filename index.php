@@ -1,9 +1,7 @@
-
-
-<?php include_once 'config/init.php'; ?>
+<?php include_once 'lib/init.php'; ?>
 
 <?php
-    $book = new book;
+    $book = new Book;
 
     $template = new Template('./templates/frontpage.php');
 
