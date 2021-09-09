@@ -1,5 +1,5 @@
 <?php
-    require_once 'db/config.php';
+    
 
     if(!$_GET['id']){
         echo 'error';
