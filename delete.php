@@ -1,17 +1,11 @@
 <?php
-    include 'db/config.php';
-    
+    require_once 'db/config.php';
+
     if(!$_GET['id']){
         echo 'error';
     }else{
         $id =$_GET['id'];
-        $result = $crud ->deleteApplication($id);
-
-        if($result){
-            header("Location: applications.php");
-        }
-        else{
-            echo 'error';
-        }
+        $sql = "DELETE FROM predstave WHERE id_predstave='".$id."'";
+        $mysqli->query($sql) or die($sql); 
     }
 ?>

@@ -1,32 +1,38 @@
 <?php
 class Database {
-    private $host = DB_HOST;
-    private $user = DB_USER;
-    private $pass = DB_PASS;
-    private $dbname = DB_NAME;
+    private $host = "localhost";
+    private $user = "root";
+    private $pass = "";
+    private $dbname = "bookverse";
+    private $dblink;
 
     private $dbh;
     private $error;
     private $stmt;
 
     public function __construct() {
-        // Setvanje veze sa bazom
-        $dsn = 'mysql:host='. $this -> host . ';dbname='. $this -> dbname;
+       $dsn = 'mysql:host='. $this -> host . ';dbname='. $this -> dbname;
 
-
-        // Setovanje opcija
         $options = array (
                 PDO::ATTR_PERSISTENT => true,
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
         );
 
-        // PDO (php data object) Instance
         try {
             $this -> dbh = new PDO($dsn, $this -> user, $this -> pass, $options);
         } catch(PDOException $e) {
             $this -> error = $e -> getMessage();
             var_dump($this->error);exit();
         }
+    }
+
+    function Connect() {
+    $this->dblink = new mysqli($this->host, $this->user, $this->pass, $this->dbname);
+    if ($this->dblink ->connect_errno) {
+        printf("Connection not successful: %s\n", $this->dblink->connect_error);
+        exit();
+    }
+    $this->dblink->set_charset("utf8");
     }
 
     public function query($query) {
