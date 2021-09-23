@@ -97,7 +97,8 @@ class Book {
 
     //UPDATE
     public function update($id, $data) {
-        $this -> db -> query("UPDATE book SET category_id = :category_id, book_title = :book_title, author = :author, description = :description, price = :price, contact_email = :contact_email WHERE id = $id");
+        $this -> db -> query("UPDATE book SET category_id = :category_id, book_title = :book_title, author = :author, 
+                description = :description, price = :price, contact_email = :contact_email WHERE id = $id");
 
         $this -> db -> bind(':category_id', $data['category_id']);
         $this -> db -> bind(':book_title', $data['book_title']);

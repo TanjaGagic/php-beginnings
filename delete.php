@@ -8,7 +8,7 @@
             echo "Ending Script";
             die();
           }
-          function set_error_handler("customError",E_USER_WARNING);
+        set_error_handler("customError" ,E_USER_WARNING);
     }else{
         $id =$_GET['id'];
         $sql = "DELETE FROM book WHERE book_id='".$id."'";

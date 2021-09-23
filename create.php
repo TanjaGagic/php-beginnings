@@ -22,6 +22,8 @@ $book = new Book;
     $template -> categories = $book -> getCategories();
 
     echo $template;
+
+    
 /* $errors = [];
 $data = [];
 
