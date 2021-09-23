@@ -23,7 +23,7 @@
         </div>
         <div class="form-group">
             <label>Description</label>
-            <textarea class="form-control" name="description">value="<?php echo $book -> description; ?>"</textarea>
+            <textarea class="form-control" name="description"><?php echo $book -> description; ?></textarea>
         </div>
         <div class="form-group">
             <label>Price</label>
